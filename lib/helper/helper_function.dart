@@ -17,7 +17,7 @@ class HelperFunction{
   }
   static Future<bool> saveUserEmailSF(String userMail)async {
     SharedPreferences sf = await SharedPreferences.getInstance();
-    return await sf.setString(userEmailKey, userEmailKey);
+    return await sf.setString(userEmailKey, userMail);
   }
 
 

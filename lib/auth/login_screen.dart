@@ -182,7 +182,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
           nextScreenReplace(context, const HomePage());
         } else {
-          showSnackBar(context, Colors.red, value);
+          showSnackbar(context, Colors.red, value);
           setState(() {
             _isLoading = false;
           });
